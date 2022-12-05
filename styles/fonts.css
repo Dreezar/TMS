@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Raleway.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/OpenSans.woff2') format('woff2');
+}
