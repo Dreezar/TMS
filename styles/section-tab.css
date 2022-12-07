@@ -1,0 +1,49 @@
+.tab-wrapper {
+    margin-top: 93px;
+}
+
+.tab-block {
+    display: grid;
+    grid-template-areas: "h3 img" "p img" "button img";
+    grid-auto-rows: 124px 210px auto;
+    grid-template-columns: 570px 470px;
+    grid-column-gap: 30px;
+    row-gap: 27px;
+    border: 1px solid rgba(198, 203, 205, 1);
+    padding-left: 100px;
+}
+
+.tab-block h3 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    padding: 46px 0;
+    grid-area: h3;
+}
+
+.tab-block p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    grid-area: p;
+}
+
+.tab-block img {
+    grid-area: img;
+}
+
+.button {
+    background-color: #EC7979;
+    color: #FFFFFF;
+    border: none;
+    width: 270px;
+    height: 58px;
+    cursor: pointer;
+    grid-area: button;
+    font-family: 'OpenSans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
