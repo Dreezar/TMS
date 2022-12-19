@@ -37,17 +37,9 @@
     height: 500px;
 }
 
-.button {
+.tabs__download-button {
     background-color: #EC7979;
-    color: #FFFFFF;
     border: none;
-    width: 270px;
-    height: 58px;
-    cursor: pointer;
-    font-family: 'OpenSans';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
     grid-area: button;
 }
 
