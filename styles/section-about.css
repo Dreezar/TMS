@@ -77,7 +77,7 @@
 
 /* Main text of the cards */
 
-.main__about-card h5 {
+.main__about-card p {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;

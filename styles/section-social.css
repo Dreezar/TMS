@@ -1,6 +1,6 @@
-.container-wrapper {
+.main__social__wrapper {
     display: grid;
-    grid-template-columns: 470px 670px;
+    grid-template-columns: 41% 58%;
     grid-column-gap: 30px;
 }
 
