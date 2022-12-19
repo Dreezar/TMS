@@ -1,0 +1,35 @@
+.main__social__wrapper {
+    display: grid;
+    grid-template-columns: 41% 58%;
+    grid-column-gap: 30px;
+}
+
+.main__social-icons__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-column-gap: 30px;
+    align-self: center;
+}
+
+.main__social {
+    background-color: #F8EFEF;
+}
+
+.main__social-title__title {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    grid-area: h4;
+    padding: 14px 0;
+}
+
+.main__social-subtitle__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    grid-area: p;
+    margin: 18px 0;
+}
