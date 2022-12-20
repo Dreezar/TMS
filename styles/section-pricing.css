@@ -67,7 +67,7 @@
 
 .main__pricing-card__name {
     font-weight: 700;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'OpenSans-700', sans-serif;
     font-size: 24px;
     line-height: 33px;
     color: #ffffff;
@@ -75,6 +75,7 @@
 }
 
 .main__pricing-card__price {
+    font-family: 'Raleway-700', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;

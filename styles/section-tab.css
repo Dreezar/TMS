@@ -15,7 +15,7 @@
 }
 
 .tabs__block h3 {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'OpenSans-700', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
@@ -60,7 +60,7 @@
     padding: 13px 0;
     position: relative;
     top: 1px;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'OpenSans-400', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;

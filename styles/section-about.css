@@ -66,8 +66,8 @@
 /* Title of the cards */
 
 .main__about-card h4 {
+    font-family: 'OpenSans-700', sans-serif;
     font-weight: 700;
-    font-family: 'OpenSans', sans-serif;
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 8px;
