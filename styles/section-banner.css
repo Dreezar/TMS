@@ -1,5 +1,5 @@
     .banner {
-        background: url(../images/section-banner-icons/background-banner.png) no-repeat;
+        background: linear-gradient(to top, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../images/section-banner-icons/background-banner.png) no-repeat;
         background-size: cover;
         background-position: center;
         height: 1026px;
@@ -24,6 +24,16 @@
     .banner__download-button {
         background: transparent;
         border: 2px solid #FFFFFF;
+    }
+    
+    .banner__download-button:hover {
+        border: 2px solid #EC7979;
+        color: #EC7979;
+    }
+    
+    .banner__download-button:active {
+        color: #FFFFFF;
+        background: #AB4949;
     }
     
     .banner__text__title {
@@ -100,4 +110,13 @@
         cursor: pointer;
         position: absolute;
         bottom: 0;
+    }
+    
+    .submit-button:hover {
+        background-color: #AB4949;
+        color: #FFFFFF;
+    }
+    
+    .submit-button:active {
+        border: 2px solid #EC7979;
     }

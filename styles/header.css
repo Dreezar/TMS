@@ -32,5 +32,13 @@ nav {
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    padding: 28px 35px;
+    padding: 30px 35px;
+}
+
+.nav-list__item__link:hover {
+    background-color: #EC7979;
+}
+
+.nav-list__item__link:active {
+    background-color: #AB4949;
 }
