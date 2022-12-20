@@ -47,6 +47,7 @@
     align-items: center;
     text-align: center;
     color: #86878B;
+    height: 181px;
 }
 
 .card__review::after {
