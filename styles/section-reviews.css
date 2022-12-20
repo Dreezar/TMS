@@ -1,4 +1,4 @@
-.main__reviews-introduction {
+.reviews-introduction {
     text-align: center;
     margin-bottom: 83px;
 }
@@ -30,7 +30,7 @@
     margin: 40px 0 0 0;
 }
 
-.main__reviews-block {
+.reviews-block {
     display: grid;
     grid-template-columns: repeat(3, 370px);
     grid-column-gap: 30px;
