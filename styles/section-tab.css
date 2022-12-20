@@ -37,7 +37,7 @@
     height: 500px;
 }
 
-.tabs__download-button {
+.download-button {
     background-color: #EC7979;
     border: none;
     grid-area: button;
