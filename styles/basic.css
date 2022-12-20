@@ -12,3 +12,14 @@ body {
     max-width: 1170px;
     margin: auto;
 }
+
+.button {
+    color: #FFFFFF;
+    width: 270px;
+    height: 58px;
+    cursor: pointer;
+    font-family: 'OpenSans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
