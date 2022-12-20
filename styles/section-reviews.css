@@ -1,0 +1,88 @@
+.reviews-introduction {
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.reviews-introduction__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    height: 150px;
+    padding: 57px 0;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.reviews-introduction__title::after {
+    content: '';
+    background-color: #EC7979;
+    height: 1px;
+    display: block;
+    width: 170px;
+    margin: 52px auto 0;
+}
+
+.reviews-introduction__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    margin: 40px 0 0 0;
+}
+
+.reviews-block {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-column-gap: 30px;
+    margin-bottom: 64px;
+}
+
+.card__review {
+    background-color: #E2E2E2;
+    padding: 38px 30px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+
+.card__review::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 15px 0 15px;
+    border-color: #E2E2E2 transparent transparent transparent;
+    position: absolute;
+    left: 70px;
+    top: 172px;
+}
+
+.card__person {
+    display: grid;
+    grid-template-areas: "img name" "img job-title";
+    margin-top: 66px;
+}
+
+.card__person>img {
+    grid-area: img;
+}
+
+.card__person-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    grid-area: name;
+}
+
+.card__person-job__title {
+    font-size: 18px;
+    line-height: 21px;
+    grid-area: job-title;
+}
