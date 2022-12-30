@@ -1,69 +1,18 @@
-/* Introduction block*/
-
-.main__about-introduction {
-    text-align: center;
-    margin-bottom: 71px;
-}
-
-
-/* Title of the introduction */
-
-.main__about-introduction h2 {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 42px;
-    height: 150px;
-    padding: 57px 0;
-    text-transform: uppercase;
-}
-
-.main__about-introduction h2::after {
-    content: '';
-    background-color: #EC7979;
-    height: 1px;
-    display: block;
-    width: 170px;
-    margin: 52px auto 0;
-}
-
-
-/* Additional text of the introduction*/
-
-.main__about-introduction p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #86878B;
-    margin: 40px 0 0 0;
-}
-
-
-/* Grid of cards */
-
 .main__about-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(3, auto);
     grid-column-gap: 30px;
     margin-bottom: 58px;
 }
-
-
-/* Icons inside of the cards */
 
 .main__about-wrapper img {
     width: 170px;
     height: 170px;
 }
 
-
-/* Card */
-
 .main__about-card {
     text-align: center;
 }
-
-
-/* Title of the cards */
 
 .main__about-card h4 {
     font-family: 'OpenSans-700', sans-serif;
@@ -73,9 +22,6 @@
     margin-bottom: 8px;
     padding: 38px 0;
 }
-
-
-/* Main text of the cards */
 
 .main__about-card p {
     font-weight: 400;

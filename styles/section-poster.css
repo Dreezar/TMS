@@ -1,12 +1,6 @@
 .poster {
-    background: linear-gradient(to top, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../images/section-poster-icons/poster.png) no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/section-poster-icons/poster.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 492px;
-}
-
-.poster__download-button {
-    background: transparent;
-    border: 2px solid #FFFFFF;
-    margin: 73px 0 50px 0;
 }
