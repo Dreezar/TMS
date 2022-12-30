@@ -2,5 +2,18 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/section-poster-icons/poster.png) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 492px;
+    height: 442px;
+}
+
+.introduction__title_white {
+    color: #FFFFFF;
+}
+
+.introduction__title_white::after {
+    background-color: #FFFFFF;
+}
+
+.introduction__subtitle_white {
+    color: #FFFFFF;
+    margin-bottom: 73px;
 }
