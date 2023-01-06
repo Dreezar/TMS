@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/section-social.css">
     <link rel="stylesheet" href="./styles/section-reviews.css">
     <link rel="stylesheet" href="./styles/section-poster.css">
+    <link rel="stylesheet" href="./styles/section-contact.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
@@ -222,9 +223,36 @@
                 <div class="introduction">
                     <h2 class="introduction__title introduction__title_white">stylish axure design</h2>
                     <p class="introduction__subtitle introduction__subtitle_white">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
-                    <button class="download-button download-button_transparent">Download</button>
+                    <button class="poster__download-button download-button download-button_transparent">Download</button>
                 </div>
             </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="introduction">
+                    <h2 class="introduction__title">contact us</h2>
+                    <p class="introduction__subtitle">Connect with us and get in touch.</p>
+                </div>
+                <form class="contact__form" action="#">
+                    <div class="contact__form_wrapper">
+                        <div class="form__input-wrapper">
+                            <div class="input-group">
+                                <input type="text" autocomplete="off" required>
+                                <label class="placeholder" placeholder="">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" autocomplete="off" required>
+                                <label class="placeholder" placeholder="">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" autocomplete="off" required>
+                                <label class="placeholder" placeholder="">Password</label>
+                            </div>
+                        </div>
+                        <textarea name="message" id="contact__form__textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
+                </form>
         </section>
     </main>
     <!-- <footer></footer> -->
