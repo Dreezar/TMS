@@ -1,0 +1,26 @@
+.footer {
+    background-color: #000000;
+}
+
+.footer-container {
+    display: grid;
+    row-gap: 30px;
+    padding: 35px 0 27px 0;
+}
+
+.footer__social-media-icons__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(26px, 53px));
+    grid-column-gap: 32px;
+    margin: auto;
+}
+
+.footer img {
+    /* width: 53px; */
+    height: 53px;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: auto;
+}
