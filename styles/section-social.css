@@ -35,20 +35,28 @@
     .main__social-icons__wrapper img {
         transform: scale(0.9);
     }
+    .main__social-icons__wrapper a {
+        margin: auto;
+        width: 26px;
+    }
+    .main__social-icons__wrapper {
+        padding-bottom: 44px;
+    }
     .main__social__wrapper {
         display: block;
     }
     .main__social-title__title {
         font-size: 18px;
         line-height: 25px;
+        padding-top: 31px;
+        text-align: center;
     }
     .main__social-subtitle__subtitle {
         font-size: 14px;
         line-height: 17px;
+        text-align: center;
     }
 }
-
-@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 600px) {
     .main__social-icons__wrapper img {

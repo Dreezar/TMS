@@ -112,9 +112,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
-
 @media screen and (max-width: 600px) {
+    .tabs {
+        margin-top: 41px;
+    }
     .tabs__block img {
         display: none;
     }

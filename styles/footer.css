@@ -38,10 +38,6 @@ footer p {
     }
 }
 
-@media screen and (max-width: 900px) {}
-
-@media screen and (max-width: 768px) {}
-
 @media screen and (max-width: 600px) {
     .footer img {
         width: 26px;
@@ -51,6 +47,9 @@ footer p {
         display: grid;
         grid-template-columns: repeat(7, minmax(26px, 53px));
         grid-column-gap: 2%;
+        margin: auto;
+    }
+    .footer__social-media-icons__wrapper a {
         margin: auto;
     }
 }
