@@ -1,107 +1,164 @@
+.banner {
+    background: linear-gradient(to top, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../images/section-banner-icons/background-banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1026px;
+    padding-top: 208px;
+}
+
+.banner__container {
+    display: flex;
+}
+
+.banner__text-block {
+    max-width: 57%;
+    margin-right: 30px;
+}
+
+.banner__text-block img {
+    width: 270px;
+    height: 100px;
+}
+
+.banner__text__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-top: 51px;
+}
+
+.banner__text__title::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-top: 55px;
+}
+
+.banner__text__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 42px 0;
+    width: 270px;
+}
+
+.banner__form {
+    width: 43%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner__form input {
+    font-family: 'OpenSans-400', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin: 0 50px 33px 50px;
+    padding-bottom: 16px;
+}
+
+.form__title {
+    font-family: 'OpenSans-700', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 33px 0;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.form__title span {
+    color: rgba(236, 121, 121, 1);
+}
+
+.submit-button {
+    color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+
+.submit-button:hover {
+    background-color: #AB4949;
+    color: #FFFFFF;
+}
+
+.submit-button:active {
+    border: 2px solid #EC7979;
+}
+
+@media screen and (max-width: 992px) {
     .banner {
-        background: linear-gradient(to top, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../images/section-banner-icons/background-banner.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 1026px;
-        padding-top: 208px;
+        height: 768px;
+        padding-top: 154px;
     }
-    
-    .banner__container {
-        display: flex;
-    }
-    
-    .banner__text-block {
-        max-width: 57%;
-        margin-right: 30px;
-    }
-    
-    .banner__text-block img {
-        width: 270px;
-        height: 100px;
-    }
-    
     .banner__text__title {
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 56px;
-        color: #FFFFFF;
-        margin-top: 51px;
+        font-size: 36px;
+        line-height: 42px;
     }
-    
-    .banner__text__title::after {
-        content: "";
-        width: 170px;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 1);
-        display: block;
-        margin-top: 55px;
-    }
-    
     .banner__text__subtitle {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        margin: 42px 0;
-        width: 270px;
-    }
-    
-    .banner__form {
-        width: 43%;
-        height: 450px;
-        border-radius: 10px;
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    
-    .banner__form input {
-        font-family: 'OpenSans-400', sans-serif;
-        font-weight: 400;
         font-size: 14px;
-        line-height: 19px;
-        color: #BDBDBD;
-        border: none;
-        border-bottom: 1px solid #BDBDBD;
-        margin: 0 50px 33px 50px;
-        padding-bottom: 16px;
+        line-height: 16px;
     }
-    
-    .form__title {
-        font-family: 'OpenSans-700', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        text-transform: uppercase;
-        color: #333333;
-        padding: 33px 0;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .banner__text__title {
         text-align: center;
-        margin-bottom: 45px;
     }
-    
-    .form__title span {
-        color: rgba(236, 121, 121, 1);
+    .banner__text__title::after {
+        width: 116px;
+        margin: 42px auto 0 auto;
     }
-    
-    .submit-button {
-        color: #FFFFFF;
+    .banner__text__subtitle {
+        margin: 42px auto;
         width: 100%;
-        height: 60px;
-        border: none;
-        background: #EC7979;
-        border-radius: 0px 0px 10px 10px;
-        cursor: pointer;
-        position: absolute;
-        bottom: 0;
+        text-align: center;
     }
-    
-    .submit-button:hover {
-        background-color: #AB4949;
-        color: #FFFFFF;
+    .banner__text-block>button {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 50px;
     }
-    
-    .submit-button:active {
-        border: 2px solid #EC7979;
+    .banner__text-block>img {
+        display: none;
     }
+    .banner__text-block {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .banner__container {
+        display: block;
+    }
+    .banner__form {
+        width: 100%;
+        height: 381px;
+        margin-top: 56px;
+    }
+    .banner {
+        height: 949px;
+        padding-top: 84px;
+    }
+}

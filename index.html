@@ -30,7 +30,9 @@
     <header class="header">
         <div class="container header__container">
             <a class="header__logo-link" href="#top"><img src="./images/header-icons/header-logo.svg" alt="header-logo"></a>
-            <nav>
+            <nav class="burger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
                 <ul class="header__nav-list__item">
                     <li class="nav-list__item">
                         <a class="nav-list__item__link" href="#features">features</a></li>
@@ -132,13 +134,13 @@
                     </div>
                     <div class="main__about-card">
                         <img src="./images/section-about-icons/about_icon_2.svg" alt="about icon 2">
-                        <h4>Quality Guaranteed</h4>
+                        <h4>Quality</h4>
                         <p>Our company prides itself on using only high-quality materials and products in our design projects, ensuring that our clients receive the best value for their investment.
                         </p>
                     </div>
                     <div class="main__about-card">
                         <img src="./images/section-about-icons/about_icon_3.svg" alt="about icon 3">
-                        <h4>Design Excellence</h4>
+                        <h4>Design</h4>
                         <p>We have a proven track record of successful interior design projects and satisfied customers, making us the go-to choice for all your design needs.</p>
                     </div>
                 </div>
@@ -193,8 +195,14 @@
                     <h2 class="introduction__title">what our customers are saying</h2>
                     <p class="introduction__subtitle">Customers praise our interior design work.</p>
                 </div>
-                <div class="reviews-block">
-                    <div class="card">
+                <div class="reviews-block reviews-block_media-query">
+                    <input type="radio" name="reviews-btn" id="reviews-btn-1" checked>
+                    <label for="reviews-btn-1"></label>
+                    <input type="radio" name="reviews-btn" id="reviews-btn-2">
+                    <label for="reviews-btn-2"></label>
+                    <input type="radio" name="reviews-btn" id="reviews-btn-3">
+                    <label for="reviews-btn-3"></label>
+                    <div id="reviews-block-card-1" class="reviews-block__card">
                         <p class="card__review">As a professional interior designer, I am constantly impressed by the creativity and attention to detail that goes into every project.</p>
                         <div class="card__person">
                             <img src="./images/section-reviews-icons/person-1.svg" alt="person-1">
@@ -202,7 +210,7 @@
                             <p class="card__person-job__title">Interior designer</p>
                         </div>
                     </div>
-                    <div class="reviews-block__card">
+                    <div id="reviews-block-card-2" class="reviews-block__card">
                         <p class="card__review">As a space planner, I am passionate about maximizing the functionality and flow of a space while also creating a cohesive and visually appealing design.</p>
                         <div class="card__person">
                             <img src="./images/section-reviews-icons/person-2.svg" alt="person-2">
@@ -210,7 +218,7 @@
                             <p class="card__person-job__title">Space planner</p>
                         </div>
                     </div>
-                    <div class="reviews-block__card">
+                    <div id="reviews-block-card-3" class="reviews-block__card">
                         <p class="card__review">Working with a professional interior designer ensures that your project is completed with the highest level of care and attention to detail.</p>
                         <div class="card__person">
                             <img src="./images/section-reviews-icons/person-3.svg" alt="person-3">
@@ -218,6 +226,8 @@
                             <p class="card__person-job__title">Manager</p>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
         <section class="poster">
             <div class="container">

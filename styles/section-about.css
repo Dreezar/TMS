@@ -20,7 +20,9 @@
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 8px;
-    padding: 38px 0;
+    line-height: 100px;
+    white-space: nowrap;
+    /* padding: 38px 0; */
 }
 
 .main__about-card p {
@@ -28,4 +30,30 @@
     font-size: 18px;
     line-height: 21px;
     color: rgba(0, 0, 0, 1)
+}
+
+@media screen and (max-width: 992px) {
+    .main__about-wrapper img {
+        width: 147px;
+        height: 147px;
+    }
+    .main__about-card h4 {
+        font-size: 18px;
+        line-height: 82px;
+    }
+    .main__about-card p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .main__about-wrapper {
+        display: block;
+        margin-bottom: 58px;
+    }
 }

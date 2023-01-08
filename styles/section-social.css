@@ -7,7 +7,6 @@
 .main__social-icons__wrapper {
     display: grid;
     grid-template-columns: repeat(7, auto);
-    /* grid-column-gap: 30px; */
     align-self: center;
 }
 
@@ -30,4 +29,30 @@
     line-height: 21px;
     color: #86878B;
     margin: 18px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .main__social-icons__wrapper img {
+        transform: scale(0.9);
+    }
+    .main__social__wrapper {
+        display: block;
+    }
+    .main__social-title__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .main__social-subtitle__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .main__social-icons__wrapper img {
+        width: 26px;
+        height: 26px;
+    }
 }

@@ -64,3 +64,18 @@
 .main__pricing-card__body-item:last-child {
     border-bottom: none;
 }
+
+@media screen and (max-width: 600px) {
+    .main__pricing-wrapper {
+        display: block;
+        padding-bottom: 0;
+    }
+    .main__pricing-card {
+        transition: none;
+        padding-bottom: 27px;
+    }
+    .main__pricing-card:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
