@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: min(100% - 110px, 1170px);
+    width: min(100% - 30px, 1170px);
     margin: auto;
 }
 
@@ -73,7 +73,6 @@ body {
 @media screen and (max-width: 992px) {
     .introduction__title {
         font-size: 24px;
-        line-height: 29px;
     }
     .introduction__subtitle {
         font-size: 14px;
@@ -84,13 +83,9 @@ body {
     }
 }
 
-@media screen and (max-width: 900px) {}
-
 @media screen and (max-width: 768px) {
     .introduction {
         text-align: center;
         padding: 0 0 24px 0;
     }
 }
-
-@media screen and (max-width: 576px) {}

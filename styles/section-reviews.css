@@ -63,10 +63,6 @@ input[name="reviews-btn"] {
     display: none;
 }
 
-.reviews label {
-    display: none;
-}
-
 @media screen and (max-width: 992px) {
     .card__review {
         font-size: 14px;
@@ -83,18 +79,27 @@ input[name="reviews-btn"] {
 }
 
 @media screen and (max-width: 768px) {
-    input[name="reviews-btn"] {
+    .reviews label {
         display: inline;
+        margin-right: 50px;
     }
     #reviews-btn-1:checked~#reviews-block-card-1,
     #reviews-btn-2:checked~#reviews-block-card-2,
     #reviews-btn-3:checked~#reviews-block-card-3 {
         display: block;
     }
-    .reviews input[name="reviews-btn"] {
+    .reviews label {
         position: relative;
-        left: calc(50% - (47px/2));
+        left: calc(50% - (144px/2));
         top: 350px;
+    }
+    .reviews label::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #333;
+        border-radius: 50%;
     }
     .reviews-block {
         display: block;
@@ -105,5 +110,3 @@ input[name="reviews-btn"] {
         margin: auto;
     }
 }
-
-@media screen and (max-width: 576px) {}
