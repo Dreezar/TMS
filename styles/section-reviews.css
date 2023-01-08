@@ -16,9 +16,17 @@
     text-align: center;
     color: #86878B;
     height: 181px;
+    overflow: auto;
 }
 
-.card__review::after {
+.card__person {
+    display: grid;
+    grid-template-areas: "img name" "img job-title";
+    margin-top: 66px;
+    max-width: 70%;
+}
+
+.reviews-block__card::after {
     content: "";
     display: block;
     width: 0;
@@ -26,18 +34,12 @@
     border-style: solid;
     border-width: 20px 15px 0 15px;
     border-color: #E2E2E2 transparent transparent transparent;
-    position: absolute;
+    position: relative;
     left: 70px;
-    top: 172px;
+    top: -137px;
 }
 
-.card__person {
-    display: grid;
-    grid-template-areas: "img name" "img job-title";
-    margin-top: 66px;
-}
-
-.card__person>img {
+.card__person img {
     grid-area: img;
 }
 
@@ -47,6 +49,7 @@
     font-size: 24px;
     line-height: 33px;
     text-transform: capitalize;
+    white-space: nowrap;
     grid-area: name;
 }
 
@@ -55,3 +58,52 @@
     line-height: 21px;
     grid-area: job-title;
 }
+
+input[name="reviews-btn"] {
+    display: none;
+}
+
+.reviews label {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .card__review {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .card__person-name {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .card__person-job__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    input[name="reviews-btn"] {
+        display: inline;
+    }
+    #reviews-btn-1:checked~#reviews-block-card-1,
+    #reviews-btn-2:checked~#reviews-block-card-2,
+    #reviews-btn-3:checked~#reviews-block-card-3 {
+        display: block;
+    }
+    .reviews input[name="reviews-btn"] {
+        position: relative;
+        left: calc(50% - (47px/2));
+        top: 350px;
+    }
+    .reviews-block {
+        display: block;
+    }
+    .reviews-block__card {
+        display: none;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {}

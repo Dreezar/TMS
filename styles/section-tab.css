@@ -10,7 +10,7 @@
     grid-column-gap: 30px;
     row-gap: 27px;
     border: 1px solid rgb(198, 203, 205);
-    padding-left: 100px;
+    padding-left: 99px;
 }
 
 .tabs__block h3 {
@@ -27,9 +27,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    overflow: hidden;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
+    overflow: auto;
     grid-area: p;
 }
 
@@ -85,4 +83,61 @@
     border-bottom: 1px solid #fff;
     border-left: 1px solid rgb(198, 203, 205);
     border-radius: 5px 5px 0px 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .tabs label {
+        width: 156px;
+        line-height: 12px;
+    }
+    .tabs__block {
+        grid-template-areas: "h3" "p" "img" "button";
+        grid-auto-rows: 95px auto auto auto;
+        row-gap: 27px;
+        border: 1px solid rgb(198, 203, 205);
+        padding: 50px;
+        grid-column-gap: 0;
+    }
+    .tabs__block img {
+        width: 100%;
+        height: 100%;
+    }
+    .tabs__block p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .tabs__block h3 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    .tabs__block img {
+        display: none;
+    }
+    .tabs__block {
+        grid-template-areas: "h3" "p" "button";
+        grid-auto-rows: 95px auto auto;
+        row-gap: 27px;
+        border: 1px solid rgb(198, 203, 205);
+        padding: 30px;
+        grid-column-gap: 0;
+    }
+    .tabs label {
+        width: calc(100%/3 - 3px);
+        line-height: 12px;
+    }
+    .tabs__block p {
+        overflow: auto;
+    }
+    .download-button_red {
+        width: 100%;
+    }
+    .tabs__block h3 {
+        padding: 0;
+        line-height: 95px;
+    }
 }

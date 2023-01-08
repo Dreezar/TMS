@@ -21,3 +21,9 @@
 .poster__download-button {
     width: 370px;
 }
+
+@media screen and (max-width: 600px) {
+    .poster__download-button {
+        width: calc(100% - 20px);
+    }
+}

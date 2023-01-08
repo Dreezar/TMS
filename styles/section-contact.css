@@ -4,7 +4,7 @@
 
 .contact__form_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    grid-template-columns: 50% 50%;
     column-gap: 30px;
 }
 
@@ -79,4 +79,22 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
     border: 2px solid #EC7979;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+    input[type="submit"] {
+        width: calc(100% - 20px);
+    }
+    .contact__form_wrapper {
+        display: block;
+    }
+    #contact__form__textarea {
+        width: 100%;
+        margin-top: 50px;
+    }
+    #contact__form__textarea::placeholder {
+        padding-left: 8px;
+    }
 }
